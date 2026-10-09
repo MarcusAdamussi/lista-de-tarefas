@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Lista de afazeres</h1>
+        <!-- FORMULÁRIO -->
+        <div class="formulario">
+            <div class="campoTarefa">
+                <label class="rotulo" for="inputTarefa">
+                    Tarefa:
+                </label>
+
+                <input type="text" id="inputTarefa" autocomplete="off">
+            </div>
+
+
+            <div class="botoes">
+
+                <button id="botaoAdicionar">Adicionar</button>
+                <button id="botaoExcluir">Excluir</button>
+            </div>
+
+        </div>
+        <!-- LISTAS -->
+        <div class="listas">
+
+            <!-- TAREFAS PENDENTES -->
+
+            <section class="listaContainer">
+
+                <h2>Tarefas Pendentes</h2>
+
+                <ul class="listaPai" id="listaPendentes">
+                </ul>
+
+            </section>
+
+
+            <!-- TAREFAS CONCLUÍDAS -->
+
+            <section class="listaContainer">
+
+                <h2>Tarefas Concluídas</h2>
+
+                <ul class="listaPai" id="listaConcluidas">
+                </ul>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
